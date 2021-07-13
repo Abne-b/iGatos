@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>iGato</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/3629/3629088.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <img src="https://image.flaticon.com/icons/png/512/3629/3629088.png" alt="Logo iFome">
+            <p>Gatitos</p>
+
+            <!-- Começo do formulário -->
+            <form action="#" method="post">
+
+                <!-- Dados Pessoais -->
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <div class="inputGroup">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="outro">Data de nascimento:</label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </div>
+                    <div class="inputGroup">
+                        <label for="endereco">Endereço:</label>
+                        <textarea name="endereco" id="endereco" cols="30" rows="1"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Rações -->
+                <fieldset>
+                    <legend>Escolha sua ração</legend>
+                    <select name="racao" id="racao">
+                        <option value="">Selecione uma opção</option>
+                        <optgroup label="Adultos">
+                            <option value="premium">Standard</option>
+                            <option value="premium">Premium</option>
+                            <option value="castrados">Castrados</option>
+                            <option value="obesos">Obesos</option>
+                            <option value="oito+">8+</option>
+                        </optgroup>
+
+                        <optgroup label="Filhotes">
+                            <option value="sorvete">Standard</option>
+                            <option value="3meses">Até 3 meses</option>
+                            <option value="6meses">Até 6 meses</option>
+                            <option value="1ano">Até 1 ano</option>
+                            <option value="2anos">Até 2 anos</option>
+                        </optgroup>
+                    </select>
+
+                    <input type="radio" name="peso" id="1kg" value="1kg" checked>
+                    <label for="1kg">1kg</label>
+                    <input type="radio" name="peso" id="5kg" value="5kg">
+                    <label for="5kg">5kg</label>
+                    <input type="radio" name="peso" id="10kg" value="10kg">
+                    <label for="10kg">10kg</label>
+                </fieldset>
+
+                <!-- Petiscos -->
+                <fieldset>
+                    <legend>Escolha seu petisco</legend>
+                    <select name="petisco" id="petisco">
+
+                        <option value="">Selecione uma opção</option>
+                        <optgroup label="Úmido">
+                            <option value="carne">Carne</option>
+                            <option value="frango">Frango</option>
+                            <option value="peixe">Peixe</option>
+                            <option value="cordeiro">Cordeiro</option>
+                        </optgroup>
+
+                        <optgroup label="Seco">
+                            <option value="biscoitoCarne">Biscoito de carne</option>
+                            <option value="biscoitoFrango">Biscoito de frango</option>
+                            <option value="biscoitoPeixe">Biscoito de peixe</option>
+                            <option value="recheadoCarne">Recheado de carne</option>
+                            <option value="recheadoFrango">Recheado de frango</option>
+                            <option value="recheadoPeixe">Recheado de peixe</option>
+                        </optgroup>
+
+                    </select>
+
+                    <label for="quantidade" class="qtd">Quantidade</label>
+                    <input type="number" name="quantidade" id="quantidade" value="quantidade">
+                </fieldset>
+
+                <!-- Tipo de pagamento -->
+                <fieldset class="pagCont">
+                    <div class="pag">
+                        <legend>Método de Pagamento</legend>
+                   
+                        <input type="radio" name="pagamento" id="debito" value="debito">
+                        <label for="debito">Débito</label>
+
+                        <input type="radio" name="pagamento" id="boleto" value="boleto">
+                        <label for="boleto">Boleto</label>
+
+                        <input type="radio" name="pagamento" id="credito" value="credito">
+                        <label for="credito">Crédito</label>
+                    </div>
+                </fieldset>
+
+
+                <!-- Botões -->
+                <button type="submit" class="pedir">Pedir</button>
+                <button type="reset" class="cancelar">Cancelar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
